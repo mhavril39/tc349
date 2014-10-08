@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* Alissa Hooper's CSS Document. 
+
+/* the html element below is the "background" of your page */
+
+
+body {
+	width: 761px;
+	margin: 1.5em auto; /* this + a defined width, centers the body content */
+	padding: 50px;
+}
+
+h1 {
+	text-align: center;
+}
