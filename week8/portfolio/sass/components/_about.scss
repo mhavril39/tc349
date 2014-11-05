@@ -1,0 +1,14 @@
+@import "compass/typography/lists/bullets";
+
+.about {
+	background-color: #bdb2c2;
+	div {
+		padding: 50px;		
+	}
+	img {
+		width: 100%;
+	}
+	ul {
+		@include no-bullet;
+	}
+}

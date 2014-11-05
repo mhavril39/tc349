@@ -1,0 +1,91 @@
+/* line 4, ../sass/components/_base.scss */
+.row img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+/* line 10, ../sass/components/_base.scss */
+.row div {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'AmerP';
+  src: url("../fonts/AmericanPurposeCasual01.ttf");
+}
+
+/* line 3, ../sass/components/_about.scss */
+.about {
+  background-color: #bdb2c2;
+}
+/* line 5, ../sass/components/_about.scss */
+.about div {
+  padding: 50px;
+}
+/* line 8, ../sass/components/_about.scss */
+.about img {
+  width: 100%;
+}
+/* line 11, ../sass/components/_about.scss */
+.about ul {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+/* line 1, ../sass/components/_footer.scss */
+#footer {
+  padding: 4em;
+}
+
+/* line 3, ../sass/components/_header.scss */
+.header {
+  background-image: url("../images/tile4.png");
+  background-position: left top;
+  margin: 0;
+}
+/* line 7, ../sass/components/_header.scss */
+.header h1 {
+  text-align: center;
+  padding-top: .5em;
+  padding-bottom: 1em;
+  margin: 0;
+  font-family: 'AmerP';
+  font-size: 4em;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+/* line 18, ../sass/components/_header.scss */
+#circle {
+  padding-top: 2em;
+}
+/* line 20, ../sass/components/_header.scss */
+#circle img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
+/* line 1, ../sass/components/_hero.scss */
+.hero {
+  background-color: #593c64;
+}
+/* line 3, ../sass/components/_hero.scss */
+.hero img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding-top: 150px;
+}
