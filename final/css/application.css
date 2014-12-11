@@ -66,6 +66,13 @@
   padding: 0;
 }
 
+/* line 1, ../sass/components/_contact.scss */
+#contact {
+  background-color: #ebebeb;
+  width: 100%;
+  padding-bottom: 1em;
+}
+
 /* line 1, ../sass/components/_footer.scss */
 #footer {
   padding: 2em;
@@ -77,6 +84,29 @@
 #footer p {
   color: #FFF;
   font-family: 'Slabo 27px', serif;
+}
+/* line 10, ../sass/components/_footer.scss */
+#footer #address {
+  float: left;
+  padding-top: .85em;
+  text-align: left;
+  display: block;
+  color: #FFF;
+  font-family: 'Slabo 27px', serif;
+}
+/* line 18, ../sass/components/_footer.scss */
+#footer #contact-info {
+  float: right;
+  padding-top: .85em;
+  text-align: right;
+  display: block;
+  color: #FFF;
+  font-family: 'Slabo 27px', serif;
+}
+/* line 26, ../sass/components/_footer.scss */
+#footer a {
+  text-decoration: underline;
+  color: #FFF;
 }
 
 /* line 3, ../sass/components/_header.scss */
@@ -149,21 +179,42 @@ h2 {
   font-family: 'Slabo 27px', serif;
 }
 
+/* line 29, ../sass/components/_home.scss */
+h3 {
+  font-family: 'Slabo 27px', serif;
+  color: #840137;
+}
+
 /* line 3, ../sass/components/_law.scss */
+#lawborder {
+  height: 50px;
+  margin-bottom: 500px;
+}
+
+/* line 9, ../sass/components/_law.scss */
 #law {
   background-color: #ebebeb;
   width: 100%;
+  height: 100%;
 }
-/* line 6, ../sass/components/_law.scss */
+/* line 13, ../sass/components/_law.scss */
+#law h3 {
+  text-align: center;
+  font-family: 'Slabo 27px', serif;
+  font-size: 3em;
+  top: 20%;
+  position: relative;
+}
+/* line 21, ../sass/components/_law.scss */
 #law img {
   width: 100%;
   padding: 0;
   margin: 0;
 }
-/* line 11, ../sass/components/_law.scss */
+/* line 26, ../sass/components/_law.scss */
 #law figcaption {
   background-color: rgba(0, 0, 0, 0.9);
-  opacity: 100;
+  opacity: 0;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -174,10 +225,14 @@ h2 {
   transition: opacity .5s linear;
   text-shadow: #000 1px 1px 0;
   text-align: left;
-  padding: 4em 2em;
   text-size: 12px;
   color: #fff;
   font-size: 16px;
+}
+/* line 42, ../sass/components/_law.scss */
+#law figcaption:hover {
+  display: block;
+  opacity: 1.0;
 }
 
 /* line 1, ../sass/components/_leadimage.scss */
@@ -195,18 +250,18 @@ h2 {
   width: 100%;
 }
 
-/* line 5, ../sass/components/_navigation.scss */
+/* line 7, ../sass/components/_navigation.scss */
 .nav li {
   float: left;
   padding-top: .85em;
 }
-/* line 8, ../sass/components/_navigation.scss */
+/* line 10, ../sass/components/_navigation.scss */
 .nav li:first-child {
   padding-top: 0;
   padding-left: 1em;
   padding-bottom: 1em;
 }
-/* line 13, ../sass/components/_navigation.scss */
+/* line 15, ../sass/components/_navigation.scss */
 .nav li:last-child {
   display: block;
   font-size: 2em;
@@ -216,19 +271,19 @@ h2 {
   color: #363636;
   font-family: 'Montserrat', sans-serif;
 }
-/* line 21, ../sass/components/_navigation.scss */
+/* line 23, ../sass/components/_navigation.scss */
 .nav li:last-child i {
   font-size: 1em;
   color: #840137;
 }
-/* line 27, ../sass/components/_navigation.scss */
+/* line 29, ../sass/components/_navigation.scss */
 .nav a {
   display: block;
   font-size: 1.25em;
   color: #840137;
   font-family: 'Slabo 27px', serif;
 }
-/* line 33, ../sass/components/_navigation.scss */
+/* line 35, ../sass/components/_navigation.scss */
 .nav img {
   height: 4em;
 }
