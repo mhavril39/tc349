@@ -1,0 +1,234 @@
+/* line 4, ../sass/components/_about.scss */
+#about {
+  background-color: #d7d7d7;
+  width: 100%;
+}
+/* line 6, ../sass/components/_about.scss */
+#about div {
+  padding: 50px;
+}
+/* line 9, ../sass/components/_about.scss */
+#about img.aboutimage {
+  width: 100%;
+}
+/* line 12, ../sass/components/_about.scss */
+#about ul {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 15, ../sass/components/_about.scss */
+#about img.smedia {
+  width: 5em;
+}
+
+/* line 2, ../sass/components/_attorneys.scss */
+#attorneys {
+  background-color: #d7d7d7;
+  width: 100%;
+}
+/* line 5, ../sass/components/_attorneys.scss */
+#attorneys h2 {
+  text-align: center;
+  font-size: 1.75em;
+  color: #840137;
+}
+/* line 10, ../sass/components/_attorneys.scss */
+#attorneys h3 {
+  text-align: center;
+}
+/* line 13, ../sass/components/_attorneys.scss */
+#attorneys p {
+  text-align: center;
+}
+/* line 17, ../sass/components/_attorneys.scss */
+#attorneys img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 1s;
+  /* For Safari 3.1 to 6.0 */
+  transition: opacity 1s;
+}
+/* line 25, ../sass/components/_attorneys.scss */
+#attorneys img:hover {
+  -webkit-transition: opacity 1s;
+  /* For Safari 3.1 to 6.0 */
+  transition: opacity 1s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 30, ../sass/components/_attorneys.scss */
+#attorneys div {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1, ../sass/components/_footer.scss */
+#footer {
+  padding: 2em;
+  text-align: center;
+  background-color: #840137;
+  width: 100%;
+}
+/* line 6, ../sass/components/_footer.scss */
+#footer p {
+  color: #FFF;
+  font-family: 'Slabo 27px', serif;
+}
+
+/* line 3, ../sass/components/_header.scss */
+.header {
+  background-image: url("../images/tile4.png");
+  background-position: left top;
+  margin: 0;
+}
+/* line 7, ../sass/components/_header.scss */
+.header h1 {
+  text-align: center;
+  padding-top: .5em;
+  padding-bottom: 1em;
+  margin: 0;
+  font-family: 'AmerP';
+  font-size: 4em;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+/* line 18, ../sass/components/_header.scss */
+#circle {
+  padding-top: 2em;
+}
+/* line 20, ../sass/components/_header.scss */
+#circle img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
+/* line 2, ../sass/components/_home.scss */
+#home {
+  background-color: #ebebeb;
+  width: 100%;
+}
+/* line 5, ../sass/components/_home.scss */
+#home img {
+  width: 100%;
+  padding: 4em;
+}
+/* line 9, ../sass/components/_home.scss */
+#home #text {
+  padding-right: 6em;
+  padding-top: 6em;
+}
+
+/* line 14, ../sass/components/_home.scss */
+p {
+  font-family: sans-serif;
+  font-size: 1.1em;
+}
+
+/* line 19, ../sass/components/_home.scss */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5em;
+  padding-left: 2em;
+}
+
+/* line 25, ../sass/components/_home.scss */
+h2 {
+  font-family: 'Slabo 27px', serif;
+}
+
+/* line 3, ../sass/components/_law.scss */
+#law {
+  background-color: #ebebeb;
+  width: 100%;
+}
+/* line 6, ../sass/components/_law.scss */
+#law img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+/* line 11, ../sass/components/_law.scss */
+#law figcaption {
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 100;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity .5s linear;
+  -moz-transition: opacity .5s linear;
+  transition: opacity .5s linear;
+  text-shadow: #000 1px 1px 0;
+  text-align: left;
+  padding: 4em 2em;
+  text-size: 12px;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* line 1, ../sass/components/_leadimage.scss */
+#leadimage {
+  width: 100%;
+  padding: 0;
+}
+/* line 4, ../sass/components/_leadimage.scss */
+#leadimage img {
+  width: 100%;
+}
+
+/* line 1, ../sass/components/_navigation.scss */
+#navigation {
+  width: 100%;
+}
+
+/* line 5, ../sass/components/_navigation.scss */
+.nav li {
+  float: left;
+  padding-top: .85em;
+}
+/* line 8, ../sass/components/_navigation.scss */
+.nav li:first-child {
+  padding-top: 0;
+  padding-left: 1em;
+  padding-bottom: 1em;
+}
+/* line 13, ../sass/components/_navigation.scss */
+.nav li:last-child {
+  display: block;
+  font-size: 2em;
+  padding-top: .35em;
+  padding-right: 1em;
+  float: right;
+  color: #363636;
+  font-family: 'Montserrat', sans-serif;
+}
+/* line 21, ../sass/components/_navigation.scss */
+.nav li:last-child i {
+  font-size: 1em;
+  color: #840137;
+}
+/* line 27, ../sass/components/_navigation.scss */
+.nav a {
+  display: block;
+  font-size: 1.25em;
+  color: #840137;
+  font-family: 'Slabo 27px', serif;
+}
+/* line 33, ../sass/components/_navigation.scss */
+.nav img {
+  height: 4em;
+}

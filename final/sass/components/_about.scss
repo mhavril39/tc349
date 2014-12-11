@@ -1,0 +1,19 @@
+@import "compass/typography/lists/bullets";
+
+
+#about {
+	background-color: #d7d7d7;
+	div {
+		padding: 50px;		
+	}
+	img.aboutimage {
+		width: 100%;
+	}
+	ul {
+		@include no-bullet;
+	}
+	img.smedia {
+		width: 5em;
+	}
+	width: 100%;
+}

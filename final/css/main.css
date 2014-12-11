@@ -113,17 +113,6 @@ textarea {
 	
 }
 
-.leadimage {
-	width: 100%;
-	/*background: url('images/leadimage.jpg') no-repeat fixed; */
-}
-
-.leadimage img{
-	margin:0;
-	padding:0;
-	width: 100%;
-}
-
 #circle {
 	padding-top: 2em;
 }

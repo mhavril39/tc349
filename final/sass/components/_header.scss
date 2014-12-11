@@ -1,0 +1,29 @@
+@import "compass/css3/transform";
+
+.header{
+	background-image: url('../images/tile4.png');
+	background-position: left top;
+	margin: 0;
+	h1 {
+		text-align: center;
+		padding-top: .5em;
+		padding-bottom: 1em;
+		margin: 0;
+		font-family: 'AmerP';
+		font-size: 4em;
+		@include rotate(-5deg);
+	}
+}
+
+#circle {
+	padding-top: 2em;
+	img  {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;	
+		margin-top: 2em;
+	}	
+}

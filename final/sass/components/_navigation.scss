@@ -1,0 +1,36 @@
+#navigation{
+	width: 100%;
+}
+.nav {
+	li {
+	    float: left;
+		padding-top: .85em;
+		&:first-child {
+			padding-top: 0;
+			padding-left: 1em;
+			padding-bottom:1em;
+		};
+		&:last-child {
+		    display: block;
+			font-size:2em;
+			padding-top: .35em;
+			padding-right: 1em;
+			float:right;
+			color:#363636;
+			font-family: 'Montserrat', sans-serif;
+			i {
+				font-size: 1em;
+				color: #840137;
+			}
+		};
+	}
+	a {
+	    display: block;
+		font-size:1.25em;
+		color:#840137;
+		font-family: 'Slabo 27px', serif;
+	}
+	img {
+		height:4em;
+	}
+}
