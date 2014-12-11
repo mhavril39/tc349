@@ -1,4 +1,12 @@
+@media (max-width : 650px) {
+	#law {
+		.fc {
+			opacity: none;
+		}
+	}
+}
 @import "compass/css3/opacity";
+
 
 #lawborder {
 	height: 50px;

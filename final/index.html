@@ -60,8 +60,9 @@
   </div>
 	
 	<div class="container page-section" id="about">
-	  <div class="row">
 		<h1>About Us</h1>
+
+	  <div class="row">
 	        <div class="col-md-6">
 <p>Initiating legal proceedings can be a difficult decision, and you need an attorney with the experience and competence to guide you through the process. Bonner Di Salvo, PLLC was formed with one philosophy in mind: treat our clients with respect and honesty, as we create a case management plan tailored to each client’s individual needs.</p>
 
@@ -94,14 +95,14 @@
   <div class="container page-section" id="law">
 	  <h1>Areas of Law</h1>
 	  <div class="row">
-        <div class="col-md-4"><figure><img src="images/bankruptcy.jpg" alt="Bankruptcy law"><a href ="Areas_of_Law.html"><div class="fc"><h3>Bankruptcy</h3></div></a></figure></div>
-        <div class="col-md-4"><figure><img src="images/veterans.jpg" alt="Veterans Law"><a href ="Areas_of_Law.html"><div class="fc"><h3>Veterans Advocacy</h3></div></a></figure></div>
-        <div class="col-md-4"><figure><img src="images/insurance.jpg" alt="Insurance Claims"><a href ="Areas_of_Law.html"><div class="fc"><h3>Insurance Claims</h3></div></a></figure></div>
-        <div class="col-md-4"><figure><img src="images/civil.jpg" alt="Civil litigation"><a href ="Areas_of_Law.html"><div class="fc"><h3>Civil Litigation</h3>
-</div></a></figure></div>
-        <div class="col-md-4"><figure><img src="images/estate.jpg" alt="Estate planning"><a href ="Areas_of_Law.html"><div class="fc"><h3>Estate Planning</h3> </div></a></figure></div>
-        <div class="col-md-4"><figure><img src="images/criminal.jpg" alt="Criminal law"><a href ="Areas_of_Law.html"><div class="fc"><h3>Criminal Law</h3>
-</div></a></figure></div>
+        <div class="col-md-4"><figure><img src="images/bankruptcy.jpg" alt="Bankruptcy law"><div class="fc"><h3>Bankruptcy</h3></div></figure></div>
+        <div class="col-md-4"><figure><img src="images/veterans.jpg" alt="Veterans Law"><div class="fc"><h3>Veterans Advocacy</h3></div></figure></div>
+        <div class="col-md-4"><figure><img src="images/insurance.jpg" alt="Insurance Claims"><div class="fc"><h3>Insurance Claims</h3></div></figure></div>
+        <div class="col-md-4"><figure><img src="images/civil.jpg" alt="Civil litigation"><div class="fc"><h3>Civil Litigation</h3>
+</div></figure></div>
+        <div class="col-md-4"><figure><img src="images/estate.jpg" alt="Estate planning"><div class="fc"><h3>Estate Planning</h3> </div></figure></div>
+        <div class="col-md-4"><figure><img src="images/criminal.jpg" alt="Criminal law"><div class="fc"><h3>Criminal Law</h3>
+</div></figure></div>
 
 	  </div>
   </div>
@@ -124,24 +125,22 @@
 		 <h1>Contact Us</h1>
 		 <div class="col-md-6"><p>Please call Bonner Di Salvo, PLLC for a free consultation.</p>
 
-<h3>Main Line:</h3>  <p>(313) 596-9500</p>
+<p><b>Main Line:</b> (313) 596-9500</p>
 
-<h3>Veterans' Hotline:</h3> <p>(888) 4VET-LAW</p>
+<p><b>Veterans' Hotline:</b> (888) 4VET-LAW</p>
 
-<h3>Email us at:</h3> <p><a href="mailto:info@bonnerdisalvo.com" target="_top">info@bonnerdisalvo.com</a></p>
+<p><b>Email us at:</b> <a href="mailto:info@bonnerdisalvo.com" target="_top">info@bonnerdisalvo.com</a> or submit your question here on our secure and confidential web-portal.</p>
 
-<p>Or, submit your question here, on our secure and confidential web-portal.</p>
-
-<h3>Disclaimer:</h3> <p>Transmission or receipt of information does not constitute an attorney-client relationship.</p> </div>
+<p><b>Disclaimer:</b> Transmission or receipt of information does not constitute an attorney-client relationship.</p> </div>
 		 <div class="col-md-6">            <form action="contact.php" method="post">
     Your name<br>
-    <input type="text" name="cf_name"><br>
-    Your e-mail<br>
-    <input type="text" name="cf_email"><br>
+    <input type="text" name="cf_name" id="cf_name"><br>
+    Your email address<br>
+    <input type="text" name="cf_email" id="cf_email"><br>
     Message<br>
-    <input type="text" name="cf_message"><br>
-<input type="submit" value="Send">
-<input type="reset" value="Clear">
+    <input type="text" name="cf_message" id="cf_message"><br>
+<input type="submit" value="Send" id="send">
+<input type="reset" value="Clear" id="clear">
 </form></div>
 	</div>
   </div>
@@ -159,6 +158,7 @@ Detroit, MI  48226</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jq-sticky-anything.min.js" type="text/javascript"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
 		// navigation click actions	
@@ -177,6 +177,7 @@ Detroit, MI  48226</div>
 			event.preventDefault();
 			$('#main-nav').toggleClass("open");
 		});
+		$('.nav').stickThis();
 	});
 	// scroll function
 	function scrollToID(id, speed){

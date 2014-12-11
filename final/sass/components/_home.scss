@@ -1,3 +1,27 @@
+@media only screen and (max-width : 1135px) and (min-width : 651px) {
+	#home {
+		#text {
+			padding: 6em;
+			}
+	}
+}
+
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+	#home {
+		#text {
+			padding: 4em;
+		}
+	}
+}
+
+
+@media only screen and (max-width : 480px)   {
+	#home {
+		#text {
+			padding: 4em;
+		}
+	}
+}
 
 #home {
 	background-color:#ebebeb;
@@ -17,9 +41,9 @@ p{
 }
 
 h1 {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 3.5em;
+	font-family: 'BaskSBI', serif;
 	padding-left: 2em;
+	padding-top: 2em;
 }
 
 h2 {
@@ -30,4 +54,8 @@ h3 {
 	font-family: 'Slabo 27px', serif;
 	color:#840137;
 	
+}
+@font-face{
+    font-family: "BaskSBI";
+    src: url('../fonts/BaskSBI.ttf');
 }
