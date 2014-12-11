@@ -113,11 +113,11 @@ textarea {
 	
 }
 
-#circle {
+.circle {
 	padding-top: 2em;
 }
 
-#circle img {
+.circle img {
 	width: 160px;
 	height: 160px;
 	border-radius: 50%;
