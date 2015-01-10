@@ -1,5 +1,11 @@
+@media only screen and (min-width : 1135px){
+	#tel {
+		pointer-events: none;
+		cursor: default;
+	}
+}
 #contact {
-	background-color:#ebebeb;
+	background: #ebebeb url("../images/paper2.jpg");
 	width: 100%;
 	padding-bottom: 1em;
 	b {

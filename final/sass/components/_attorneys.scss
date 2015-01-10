@@ -1,6 +1,19 @@
 @import "compass/css3/opacity";
+@media (min-width : 1135px){
+	#attorneys {
+		img {
+			@include opacity(.7);
+		    -webkit-transition: opacity 1s; /* For Safari 3.1 to 6.0 */
+		    transition: opacity 1s;
+		}
+		img:hover { 
+		    -webkit-transition: opacity 1s; /* For Safari 3.1 to 6.0 */
+		    transition: opacity 1s;
+	    	@include opacity(1);	
+		}
+}}
 #attorneys {
-	background-color: #d7d7d7;
+	background: #d7d7d7 url("../images/paper3.jpg");
 	width: 100%;
 	h2 {
 		text-align: center;
@@ -17,14 +30,6 @@
 	img {
 		align:center;
 		padding:0;
-		@include opacity(.7);
-	    -webkit-transition: opacity 1s; /* For Safari 3.1 to 6.0 */
-	    transition: opacity 1s;
-	}
-	img:hover { 
-	    -webkit-transition: opacity 1s; /* For Safari 3.1 to 6.0 */
-	    transition: opacity 1s;
-    	@include opacity(1);	
 	}
 	div {
 		margin:0;

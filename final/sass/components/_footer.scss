@@ -1,3 +1,11 @@
+@media only screen and (min-width : 1135px){
+	#address {
+	text-align: left;
+}
+	#contact-info {
+	text-align: right;
+}
+}
 #footer {
 	padding: 2em;
 	text-align: center;
@@ -8,17 +16,13 @@
 	font-family: 'Slabo 27px', serif;
 }
 	#address {
-	float: left;
 	padding-top: .85em;
-	text-align: left;
     display: block;
 	color:#FFF;
 	font-family: 'Slabo 27px', serif;
 	}
 	#contact-info {
-	float: right;
 	padding-top: .85em;
-	text-align: right;
     display: block;
 	color:#FFF;
 	font-family: 'Slabo 27px', serif;

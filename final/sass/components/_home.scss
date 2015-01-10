@@ -1,8 +1,16 @@
+@media (min-width : 1135px) {
+	#text {
+		padding-top: 6em;
+	}
+}
 @media only screen and (max-width : 1135px) and (min-width : 651px) {
 	#home {
 		#text {
-			padding: 6em;
+			padding: 0 6em;
 			}
+	}
+	#spacer {
+		height: 12em;
 	}
 }
 
@@ -24,7 +32,7 @@
 }
 
 #home {
-	background-color:#ebebeb;
+	background: #ebebeb url("../images/paper2.jpg");
 	width: 100%;
 	img {
 		width: 100%;
@@ -32,7 +40,6 @@
 	}
 	#text {
 		padding-right: 6em;
-		padding-top: 6em;
 	}
 }
 p{
@@ -44,10 +51,12 @@ h1 {
 	font-family: 'BaskSBI', serif;
 	padding-left: 2em;
 	padding-top: 2em;
+	text-shadow: 2px 2px #bababa;
 }
 
 h2 {
 	font-family: 'Slabo 27px', serif;
+	text-shadow: 2px 2px #a7a7a7;
 }
 
 h3 {

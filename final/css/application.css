@@ -1,6 +1,6 @@
 /* line 4, ../sass/components/_about.scss */
 #about {
-  background-color: #d7d7d7;
+  background: #d7d7d7 url("../images/paper3.jpg");
   width: 100%;
 }
 /* line 6, ../sass/components/_about.scss */
@@ -24,90 +24,102 @@
   width: 5em;
 }
 
-/* line 2, ../sass/components/_attorneys.scss */
+@media (min-width: 1135px) {
+  /* line 4, ../sass/components/_attorneys.scss */
+  #attorneys img {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+    -webkit-transition: opacity 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: opacity 1s;
+  }
+  /* line 9, ../sass/components/_attorneys.scss */
+  #attorneys img:hover {
+    -webkit-transition: opacity 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: opacity 1s;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+}
+/* line 15, ../sass/components/_attorneys.scss */
 #attorneys {
-  background-color: #d7d7d7;
+  background: #d7d7d7 url("../images/paper3.jpg");
   width: 100%;
 }
-/* line 5, ../sass/components/_attorneys.scss */
+/* line 18, ../sass/components/_attorneys.scss */
 #attorneys h2 {
   text-align: center;
   font-size: 1.75em;
   color: #840137;
 }
-/* line 10, ../sass/components/_attorneys.scss */
+/* line 23, ../sass/components/_attorneys.scss */
 #attorneys h3 {
   text-align: center;
 }
-/* line 13, ../sass/components/_attorneys.scss */
+/* line 26, ../sass/components/_attorneys.scss */
 #attorneys p {
   text-align: center;
 }
-/* line 17, ../sass/components/_attorneys.scss */
+/* line 30, ../sass/components/_attorneys.scss */
 #attorneys img {
   align: center;
   padding: 0;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-  opacity: 0.7;
-  -webkit-transition: opacity 1s;
-  /* For Safari 3.1 to 6.0 */
-  transition: opacity 1s;
 }
-/* line 24, ../sass/components/_attorneys.scss */
-#attorneys img:hover {
-  -webkit-transition: opacity 1s;
-  /* For Safari 3.1 to 6.0 */
-  transition: opacity 1s;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-}
-/* line 29, ../sass/components/_attorneys.scss */
+/* line 34, ../sass/components/_attorneys.scss */
 #attorneys div {
   margin: 0;
   padding: 0;
 }
 
-/* line 1, ../sass/components/_contact.scss */
+@media only screen and (min-width: 1135px) {
+  /* line 2, ../sass/components/_contact.scss */
+  #tel {
+    pointer-events: none;
+    cursor: default;
+  }
+}
+/* line 7, ../sass/components/_contact.scss */
 #contact {
-  background-color: #ebebeb;
+  background: #ebebeb url("../images/paper2.jpg");
   width: 100%;
   padding-bottom: 1em;
 }
-/* line 5, ../sass/components/_contact.scss */
+/* line 11, ../sass/components/_contact.scss */
 #contact b {
   font-family: 'Slabo 27px', serif;
   color: #840137;
   font-weight: normal;
   font-size: 1.25em;
 }
-/* line 11, ../sass/components/_contact.scss */
+/* line 17, ../sass/components/_contact.scss */
 #contact div {
   padding-left: 2em;
   padding-right: 2em;
   padding-bottom: 2em;
 }
-/* line 16, ../sass/components/_contact.scss */
+/* line 22, ../sass/components/_contact.scss */
 #contact form {
   font-family: 'Slabo 27px', serif;
   color: #840137;
   font-size: 1.25em;
 }
-/* line 21, ../sass/components/_contact.scss */
+/* line 27, ../sass/components/_contact.scss */
 #contact #cf_name {
   width: 100%;
   margin-bottom: .5em;
 }
-/* line 25, ../sass/components/_contact.scss */
+/* line 31, ../sass/components/_contact.scss */
 #contact #cf_email {
   width: 100%;
   margin-bottom: .5em;
 }
-/* line 29, ../sass/components/_contact.scss */
+/* line 35, ../sass/components/_contact.scss */
 #contact #cf_message {
   width: 100%;
   height: 5em;
 }
-/* line 33, ../sass/components/_contact.scss */
+/* line 39, ../sass/components/_contact.scss */
 #contact #send {
   background-color: #840137;
   margin: .5em .5em .5em 0;
@@ -116,7 +128,7 @@
   font-family: 'Slabo 27px', serif;
   font-size: 90%;
 }
-/* line 41, ../sass/components/_contact.scss */
+/* line 47, ../sass/components/_contact.scss */
 #contact #clear {
   background-color: #840137;
   margin: .5em .5em .5em 0;
@@ -126,37 +138,44 @@
   font-size: 90%;
 }
 
-/* line 1, ../sass/components/_footer.scss */
+@media only screen and (min-width: 1135px) {
+  /* line 2, ../sass/components/_footer.scss */
+  #address {
+    text-align: left;
+  }
+
+  /* line 5, ../sass/components/_footer.scss */
+  #contact-info {
+    text-align: right;
+  }
+}
+/* line 9, ../sass/components/_footer.scss */
 #footer {
   padding: 2em;
   text-align: center;
   background-color: #840137;
   width: 100%;
 }
-/* line 6, ../sass/components/_footer.scss */
+/* line 14, ../sass/components/_footer.scss */
 #footer p {
   color: #FFF;
   font-family: 'Slabo 27px', serif;
 }
-/* line 10, ../sass/components/_footer.scss */
-#footer #address {
-  float: left;
-  padding-top: .85em;
-  text-align: left;
-  display: block;
-  color: #FFF;
-  font-family: 'Slabo 27px', serif;
-}
 /* line 18, ../sass/components/_footer.scss */
-#footer #contact-info {
-  float: right;
+#footer #address {
   padding-top: .85em;
-  text-align: right;
   display: block;
   color: #FFF;
   font-family: 'Slabo 27px', serif;
 }
-/* line 26, ../sass/components/_footer.scss */
+/* line 24, ../sass/components/_footer.scss */
+#footer #contact-info {
+  padding-top: .85em;
+  display: block;
+  color: #FFF;
+  font-family: 'Slabo 27px', serif;
+}
+/* line 30, ../sass/components/_footer.scss */
 #footer a {
   text-decoration: underline;
   color: #FFF;
@@ -198,59 +217,71 @@
   margin-top: 2em;
 }
 
+@media (min-width: 1135px) {
+  /* line 2, ../sass/components/_home.scss */
+  #text {
+    padding-top: 6em;
+  }
+}
 @media only screen and (max-width: 1135px) and (min-width: 651px) {
-  /* line 3, ../sass/components/_home.scss */
+  /* line 8, ../sass/components/_home.scss */
   #home #text {
-    padding: 6em;
+    padding: 0 6em;
+  }
+
+  /* line 12, ../sass/components/_home.scss */
+  #spacer {
+    height: 12em;
   }
 }
 @media only screen and (max-width: 650px) and (min-width: 481px) {
-  /* line 11, ../sass/components/_home.scss */
+  /* line 19, ../sass/components/_home.scss */
   #home #text {
     padding: 4em;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 20, ../sass/components/_home.scss */
+  /* line 28, ../sass/components/_home.scss */
   #home #text {
     padding: 4em;
   }
 }
-/* line 26, ../sass/components/_home.scss */
+/* line 34, ../sass/components/_home.scss */
 #home {
-  background-color: #ebebeb;
+  background: #ebebeb url("../images/paper2.jpg");
   width: 100%;
 }
-/* line 29, ../sass/components/_home.scss */
+/* line 37, ../sass/components/_home.scss */
 #home img {
   width: 100%;
   padding: 4em;
 }
-/* line 33, ../sass/components/_home.scss */
+/* line 41, ../sass/components/_home.scss */
 #home #text {
   padding-right: 6em;
-  padding-top: 6em;
 }
 
-/* line 38, ../sass/components/_home.scss */
+/* line 45, ../sass/components/_home.scss */
 p {
   font-family: sans-serif;
   font-size: 1.1em;
 }
 
-/* line 43, ../sass/components/_home.scss */
+/* line 50, ../sass/components/_home.scss */
 h1 {
   font-family: 'BaskSBI', serif;
   padding-left: 2em;
   padding-top: 2em;
+  text-shadow: 2px 2px #bababa;
 }
 
-/* line 49, ../sass/components/_home.scss */
+/* line 57, ../sass/components/_home.scss */
 h2 {
   font-family: 'Slabo 27px', serif;
+  text-shadow: 2px 2px #a7a7a7;
 }
 
-/* line 53, ../sass/components/_home.scss */
+/* line 62, ../sass/components/_home.scss */
 h3 {
   font-family: 'Slabo 27px', serif;
   color: #840137;
@@ -267,19 +298,44 @@ h3 {
     opacity: none;
   }
 }
-/* line 11, ../sass/components/_law.scss */
+@media (min-width: 1135px) {
+  /* line 10, ../sass/components/_law.scss */
+  #law .fc {
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transition: opacity .5s linear;
+    -moz-transition: opacity .5s linear;
+    transition: opacity .5s linear;
+    text-shadow: #000 1px 1px 0;
+    text-align: left;
+    text-size: 12px;
+    color: #fff;
+    font-size: 16px;
+  }
+  /* line 26, ../sass/components/_law.scss */
+  #law .fc:hover {
+    display: block;
+    opacity: 1.0;
+  }
+}
+/* line 36, ../sass/components/_law.scss */
 #lawborder {
   height: 50px;
   margin-bottom: 500px;
 }
 
-/* line 17, ../sass/components/_law.scss */
+/* line 42, ../sass/components/_law.scss */
 #law {
-  background-color: #ebebeb;
+  background: #ebebeb url("../images/paper2.jpg");
   width: 100%;
   height: 100%;
 }
-/* line 21, ../sass/components/_law.scss */
+/* line 46, ../sass/components/_law.scss */
 #law h3 {
   text-align: center;
   font-family: 'Slabo 27px', serif;
@@ -287,22 +343,21 @@ h3 {
   top: 20%;
   position: relative;
 }
-/* line 28, ../sass/components/_law.scss */
+/* line 53, ../sass/components/_law.scss */
 #law img {
   width: 100%;
   padding: 0;
   margin: 0;
 }
-/* line 33, ../sass/components/_law.scss */
+/* line 58, ../sass/components/_law.scss */
 #law figure {
   width: 100%;
   padding: 0;
   margin: 0;
 }
-/* line 38, ../sass/components/_law.scss */
+/* line 63, ../sass/components/_law.scss */
 #law .fc {
-  background-color: rgba(0, 0, 0, 0.9);
-  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -317,10 +372,15 @@ h3 {
   color: #fff;
   font-size: 16px;
 }
-/* line 54, ../sass/components/_law.scss */
+/* line 78, ../sass/components/_law.scss */
 #law .fc:hover {
   display: block;
   opacity: 1.0;
+}
+
+/* line 85, ../sass/components/_law.scss */
+.no-padding {
+  padding: 0;
 }
 
 /* line 1, ../sass/components/_leadimage.scss */
@@ -333,72 +393,92 @@ h3 {
   width: 100%;
 }
 
-@media only screen and (max-width: 1135px) and (min-width: 651px) {
-  /* line 3, ../sass/components/_navigation.scss */
-  .nav li {
-    align: center;
-    text-align: center;
-    display: inline;
-    float: center;
+@media only screen and (min-width: 1135px) {
+  /* line 2, ../sass/components/_navigation.scss */
+  #navigation {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #FFF;
+    z-index: 1;
+    opacity: .9;
   }
-  /* line 9, ../sass/components/_navigation.scss */
-  .nav li a {
-    align: right;
-    text-align: right;
+
+  /* line 12, ../sass/components/_navigation.scss */
+  .nav li {
+    float: left;
+  }
+}
+@media only screen and (max-width: 1135px) and (min-width: 651px) {
+  /* line 19, ../sass/components/_navigation.scss */
+  #navigation {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #FFF;
+    z-index: 1;
+    opacity: .9;
+  }
+
+  /* line 28, ../sass/components/_navigation.scss */
+  .nav {
+    text-align: center;
+  }
+  /* line 30, ../sass/components/_navigation.scss */
+  .nav li {
     display: inline;
-    float: center;
+    float: none;
+  }
+  /* line 34, ../sass/components/_navigation.scss */
+  .nav li a {
+    display: inline;
     margin-left: 2em;
   }
-  /* line 16, ../sass/components/_navigation.scss */
+  /* line 38, ../sass/components/_navigation.scss */
   .nav li:first-child {
+    float: left;
     width: 100%;
   }
-  /* line 19, ../sass/components/_navigation.scss */
+  /* line 42, ../sass/components/_navigation.scss */
   .nav li:last-child {
     width: 100%;
   }
 }
 @media only screen and (max-width: 650px) and (min-width: 481px) {
-  /* line 28, ../sass/components/_navigation.scss */
+  /* line 51, ../sass/components/_navigation.scss */
   .nav li {
     width: 100%;
     align: center;
     text-align: center;
   }
-  /* line 32, ../sass/components/_navigation.scss */
+  /* line 55, ../sass/components/_navigation.scss */
   .nav li a {
     font-size: 2em;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 41, ../sass/components/_navigation.scss */
+  /* line 64, ../sass/components/_navigation.scss */
   .nav li {
     width: 100%;
     align: center;
     text-align: center;
   }
-  /* line 45, ../sass/components/_navigation.scss */
+  /* line 68, ../sass/components/_navigation.scss */
   .nav li a {
     font-size: 1.5em;
   }
 }
-/* line 52, ../sass/components/_navigation.scss */
-#navigation {
-  width: 100%;
-}
-
-/* line 58, ../sass/components/_navigation.scss */
+/* line 77, ../sass/components/_navigation.scss */
 .nav li {
-  float: left;
   padding-top: .85em;
 }
-/* line 61, ../sass/components/_navigation.scss */
+/* line 79, ../sass/components/_navigation.scss */
 .nav li:first-child {
   padding-top: 0;
   padding-left: 1em;
   padding-bottom: 1em;
 }
-/* line 66, ../sass/components/_navigation.scss */
+/* line 84, ../sass/components/_navigation.scss */
 .nav li:last-child {
   display: block;
   font-size: 2em;
@@ -408,19 +488,34 @@ h3 {
   color: #363636;
   font-family: 'Montserrat', sans-serif;
 }
-/* line 74, ../sass/components/_navigation.scss */
+/* line 92, ../sass/components/_navigation.scss */
 .nav li:last-child i {
   font-size: 1em;
   color: #840137;
 }
-/* line 80, ../sass/components/_navigation.scss */
+/* line 98, ../sass/components/_navigation.scss */
 .nav a {
   display: block;
   font-size: 1.25em;
   color: #840137;
   font-family: 'Slabo 27px', serif;
 }
-/* line 86, ../sass/components/_navigation.scss */
+/* line 104, ../sass/components/_navigation.scss */
+.nav #bignmber {
+  display: block;
+  font-size: 2em;
+  padding-top: .35em;
+  padding-right: 1em;
+  float: right;
+  color: #363636;
+  font-family: 'Montserrat', sans-serif;
+}
+/* line 112, ../sass/components/_navigation.scss */
+.nav #bignmber i {
+  font-size: 1em;
+  color: #840137;
+}
+/* line 117, ../sass/components/_navigation.scss */
 .nav img {
   height: 4em;
 }
